@@ -8,12 +8,28 @@ package com.skyengine.world;
 public class Location
 {
 
+    /**
+     * The position represents the coordinates of the location
+     */
     private Vector3f position;
     
+    /**
+     * Creates a location representing a position
+     * @param x the x-coordinate
+     * @param y the y-coordinate
+     * @param z the z-coordinate
+     */
     protected Location(int x, int y, int z) {
 	this.position = new Vector3f(x, y, z);
     }
     
+    /**
+     * Creates a location representing a position in the game world
+     * @param x the x-coordinate
+     * @param y the y-coordinate
+     * @param z the z-coordinate
+     * @return a new {@code Location}
+     */
     public static Location struct(int x, int y, int z) {
 	return new Location(x, y, z);
     }
