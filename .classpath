@@ -6,6 +6,7 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="lib/netty-all-4.1.51.Final.jar"/>
+	<classpathentry kind="lib" path="lib/netty-all-4.1.51.Final.jar" sourcepath="lib/netty-all-4.1.51.Final-sources.jar"/>
+	<classpathentry kind="lib" path="lib/commons-compress-1.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
