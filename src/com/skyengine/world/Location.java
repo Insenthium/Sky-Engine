@@ -19,7 +19,7 @@ public class Location
      * @param y the y-coordinate
      * @param z the z-coordinate
      */
-    protected Location(int x, int y, int z) {
+    private Location(int x, int y, int z) {
 	this.position = new Vector3f(x, y, z);
     }
     
@@ -87,7 +87,7 @@ public class Location
          * @param y the vector y-coordinate
          * @param z the vector z-coordinate
          */
-        public Vector3f(int x, int y, int z)
+        protected Vector3f(int x, int y, int z)
         {
     	this.x = x;
     	this.y = y;
@@ -99,7 +99,7 @@ public class Location
          * @param addend the vector added
          * @return new vector with the added values between {@value addend}
          */
-        public Vector3f add(Vector3f addend)
+        protected Vector3f add(Vector3f addend)
         {
     	return new Vector3f(x + addend.x, y + addend.y, z + addend.z);
         }
@@ -109,7 +109,7 @@ public class Location
          * @param difference the vector subtracted
          * @return new vector with the subtracted values between {@value difference}
          */
-        public Vector3f subtract(Vector3f difference) {
+        protected Vector3f subtract(Vector3f difference) {
     	return new Vector3f(x - difference.x, y - difference.y, z - difference.z);
         }
 
